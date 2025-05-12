@@ -14,8 +14,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Plaster&display=swap" rel="stylesheet" />
-        <style>{`.ballet { font-family: 'Ballet', cursive; font-optical-sizing: auto; font-weight: 400; font-style: normal; } .zain { font-family: "Zain", sans-serif; font-weight: 700; font-style: normal; }`}</style>
+        <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Plaster&family=Pinyon+Script&display=swap" rel="stylesheet" />
+        <style>{` .ballet { font-family: 'Ballet', cursive; font-optical-sizing: auto; font-weight: 400; font-style: normal; } 
+                  .zain { font-family: 'zain', system-ui; font-weight: 400; font-style: normal; } 
+                  .pinyon-script { font-family: 'Pinyon Script', cursive; font-weight: 400; font-style: normal; }`}
+        </style>
       </head>
       <body className="zain">
         {children}
