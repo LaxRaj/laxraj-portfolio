@@ -17,10 +17,10 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Plaster&family=Pinyon+Script&display=swap" rel="stylesheet" />
         <style>{` .ballet { font-family: 'Ballet', cursive; font-optical-sizing: auto; font-weight: 400; font-style: normal; } 
                   .zain { font-family: 'zain', system-ui; font-weight: 400; font-style: normal; } 
-                  .pinyon-script { font-family: 'Pinyon Script', cursive; font-weight: 400; font-style: normal; }`}
+                  .zen { font-family: "Zen Antique", serif;font-weight: 400;font-style: normal;}`}
         </style>
       </head>
-      <body className="zain">
+      <body className="zen">
         {children}
       </body>
     </html>
