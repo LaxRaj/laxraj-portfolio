@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from './components/Navbar';
 import WhySection from './components/WhySection';
+import ProjectsSection from './components/ProjectsSection';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         </p>
       </main>
       <WhySection />
+      <ProjectsSection />
     </>
   );
 }

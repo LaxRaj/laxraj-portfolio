@@ -19,12 +19,16 @@ const goals = [
 export default function WhySection() {
   return (
     <section id="why" className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-[#ffffff] px-4 md:px-12 py-12">
-      {/* Right: Dream Tracker */}
-      <div className="flex-1 flex flex-col items-center justify-center w-full max-w-2xl mx-auto">
-        <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center zen">Dreams Tracker</h3>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-12 w-full">
+      {/*Dream Tracker */}
+      <div className="flex-1 flex flex-col items-start justify-center w-full max-w-2xl mx-auto">
+        <h3 className="text-3xl font-bold text-gray-900 mb-8 zen">Dreams Tracker</h3>
+        <ul className="flex flex-wrap w-full" style={{ rowGap: '2px', columnGap: '0px' }}>
           {goals.map((goal, idx) => (
-            <li key={idx} className="flex items-center space-x-4 zen text-xl">
+            <li
+              key={idx}
+              className="flex items-center space-x-4 zen text-xl transition-transform duration-150 hover:translate-x-[3px]"
+              style={{width: 'calc(50% - 0.75rem)'}}
+            >
               <span>
                 {goal.achieved ? (
                   <CheckBadgeIcon className="w-6 h-6 text-green-600" aria-label="Achieved" />
